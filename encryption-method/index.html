@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加密解密</title>
+</head>
+<body>
+<script src="js/base64.js"></script>
+<script src="js/MD5.js"></script>
+<script src="js/DES.js"></script>
+<script>
+    // base64 加密
+    // 1.字符串
+    var str = '123';
+    var bs = new Base64();
+    console.log(bs.encode(str));
+
+    // 解密
+    // 2 MTIz
+    var str1 = 'MTIz';
+    console.log(bs.decode(str1));
+
+
+    // MD5加密
+    // 盐 这个盐要足够长 ,足够复杂 足够咸
+    var salt = 'dadafdfdswrwqeqrweq!@#$$$$%%^&&*****';
+//    console.log(hex_md5(str));
+//    console.log(hex_md5(str + salt));
+
+    var key = 'abcd';
+    // des加密(对称加密)
+    // XupdZhIkd5k=
+//    console.log(DES3.encrypt(key, str));
+//    des解密
+//    console.log(DES3.decrypt(key, 'XupdZhIkd5k='));
+
+</script>
+</body>
+</html>
